@@ -11,7 +11,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /stack.tar.gz
 
 ENV PATH /root/.local/bin:$PATH
-ENV RESOLVER lts-9.18
+ENV RESOLVER lts-12.0
 
 RUN stack install --resolver=$RESOLVER sdl2 sdl2-image lens split splitmix executable-path random-shuffle tasty-discover tasty-quickcheck QuickCheck tasty-hunit ansi-terminal pretty-simple
 
