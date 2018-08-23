@@ -13,6 +13,6 @@ RUN apt-get update && \
 ENV PATH /root/.local/bin:$PATH
 ENV RESOLVER lts-12.7
 
-RUN stack install --resolver=$RESOLVER sdl2 sdl2-image sdl2-gfx sdl2-ttf sdl2-mixer lens split splitmix executable-path random-shuffle tasty-discover tasty-quickcheck QuickCheck tasty-hunit ansi-terminal pretty-simple
+RUN stack install --resolver=$RESOLVER sdl2 sdl2-image sdl2-gfx sdl2-ttf sdl2-mixer lens split splitmix executable-path random-shuffle tasty-discover tasty-quickcheck QuickCheck tasty-hunit ansi-terminal pretty-simple clock fsnotify
 
 CMD ["stack"]
